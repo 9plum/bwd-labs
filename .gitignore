@@ -1,0 +1,13 @@
+# Node.js modules
+node_modules/
+
+# IDE settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+
+# Build directories
+build/
+dist/
