@@ -50,35 +50,24 @@
       </div>
       <div class="container">
         <div class="main-table">
-          <div class="task-column">
+          <div class="task-column" id="todo-column">
             <h2>Задачи</h2>
-            <div class="task-item">
-              <input type="checkbox" /> Задача1
-              <button class="button delete-btn">Удалить</button>
-            </div>
-            
-        
-          <div class="task-column">
-            <h2>В процессе</h2>
-            <div class="task-item">
-              <input type="checkbox" /> Задача2
-              <button class="button delete-btn">Удалить</button>
-            </div>
-            <div class="task-item">
-              <input type="checkbox" /> Задача3
-              <button class="button delete-btn">Удалить</button>
+            <div class="tasks-container">
+              <!-- Задачи будут добавляться динамически -->
             </div>
           </div>
-        
-          <div class="task-column">
-            <h2>Выполнены</h2>
-            <div class="task-item completed">
-              <input type="checkbox" /> Задача4
-              <button class="button delete-btn">Удалить</button>
+
+          <div class="task-column" id="in-progress-column">
+            <h2>В процессе</h2>
+            <div class="tasks-container">
+              <!-- Задачи будут добавляться динамически -->
             </div>
-            <div class="task-item completed">
-              <input type="checkbox" /> Задача5
-              <button class="button delete-btn">Удалить</button>
+          </div>
+
+          <div class="task-column" id="completed-column">
+            <h2>Выполнены</h2>
+            <div class="tasks-container">
+              <!-- Задачи будут добавляться динамически -->
             </div>
           </div>
         </div>        
@@ -86,5 +75,6 @@
       </div>
     </section>
     <script src="bundle.js"></script>
+    <script src="scripts/tasks.js"></script>
   </body>
 </html>
